@@ -2,10 +2,6 @@
 title: Block Diagram
 ---
 
-### Motor Subsystem
+### Motor Subsystem for Daisy Chain Network
 
-### Voltage Sensor Subsystem
 
-### Light Sensor Subsystem
-
-### ESP32 WiFi Subsystem
