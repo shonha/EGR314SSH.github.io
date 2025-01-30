@@ -4,7 +4,7 @@ title: Block Diagram
 
 ### Motor Subsystem
 
-### Solar Panel Voltage Reader Subsystem
+### Voltage Sensor Subsystem
 
 ### Light Sensor Subsystem
 
