@@ -30,6 +30,6 @@ title: PIC Table
 | SPI        | 11           | 4      | RC0-RC3                             |
 | I2C        | 11           | 0      | *                              |
 | PWM        | 11           | 0      | *                              |
-| ICSP       | 1           | 1      | *                              |
+| ICSP       | 1           | 1      | RA3                             |
 | ...        | ...         | ...    | ...                            |
 
