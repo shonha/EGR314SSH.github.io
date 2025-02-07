@@ -27,7 +27,7 @@ title: PIC Table
 | GPIO       |11           | 0      | *                              |
 | ADC        | 11           | 0      | *                              |
 | UART       | 2           | 2      | RC4-RC5                              |
-| SPI        | 11           | 4      | RC0-RC3                             |
+| SPI        | 4           | 4      | RC0-RC3                             |
 | I2C        | 11           | 0      | *                              |
 | PWM        | 11           | 0      | *                              |
 | ICSP       | 1           | 1      | RA3                             |
