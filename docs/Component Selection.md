@@ -81,7 +81,7 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 |-------------------|--------------------------|
 |can communicate with SPI|expensive option|
 
-**Choice:** Option 3 DRV8434SRGER
+**Choice:** Option 3 DRV8889QPWPRQ1
 
 **Rationale:** I chose option 3 because it is able to support a 5V stepper motor. It is also compatible with my PIC I chose after doing some research. Although it is the most expensive option, it also has good thermal padding and operating temperatures.
 ### Stepper Motor
