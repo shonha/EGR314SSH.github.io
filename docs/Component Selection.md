@@ -35,15 +35,16 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 |Has UART and SPI compatibility|small programming size (3.5kB)|
 |Functions with MPX labs ||
 
-3. PIC16F1823-I/ST
-<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PICOPTION3.jpg" width="200" height="200">
+3. PIC18F14Q20T-I/SS
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/150%7EC04-072%7ESS%7E20.jpg" width="200" height="200">
 
-* $1.54
+* $1.06
 * [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F1823-I-ST/2258581)
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|UART and SPI compatibility|small RAM size|
+|UART and SPI compatibility|compatibility issues|
+| 16kB programming memory||
 
 **Choice:** Option 2 PIC16F15323-I/SL
 
