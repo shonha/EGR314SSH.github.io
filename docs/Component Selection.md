@@ -85,7 +85,40 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 
 **Rationale:** I chose option 3 because it is able to support a 5V stepper motor. It is also compatible with my PIC I chose after doing some research. Although it is the most expensive option, it also has good thermal padding and operating temperatures.
 ### Stepper Motor
+1. MIKROE-1530
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SMOP1.jpg" width="200" height="200">
 
+* $9.60
+* [Link to Product](https://www.digikey.com/en/products/detail/mikroelektronika/MIKROE-1530/5724295)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|cheap/affordable     |unipolar|
+
+2. QSH4218-51-10-049
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SMOP2.jpg" width="200" height="200">
+
+* $67.78
+* [Link to Product](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/QSH4218-51-10-049/4843427)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|bipolar/hybrid|super expensive|
+
+
+3. 42M100B1B
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SMOP3.jpg" width="200" height="200">
+
+* $37.73
+* [Link to Product](https://www.digikey.com/en/products/detail/portescap/42M100B1B/417819)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|bipolar/hybrid|no datasheet and hard to wire|
+
+**Choice:** Option 1 MIKROE-1530
+
+**Rationale:**  I chose option 1 because it is by far the cheapest out of all the options as stepper motors are really expensive. It does not have bipolar capabilities but can still be used for bidirectional control. 
 ### 5V Power Supply
 
 ### 3.3V Voltage Regulator
