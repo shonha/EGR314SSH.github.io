@@ -129,7 +129,7 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|cheapesst option     |low current output|
+|cheapest option     |low current output|
 
 2. QSH4218-51-10-049
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PSOP2.jpg" width="200" height="200">
@@ -159,5 +159,40 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 
 ### 3.3V Switching Regulator
 
+1. TLV61048DBVR
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/VROP1.jpg" width="200" height="200">
 
+* $0.63
+* [Link to Product](https://www.digikey.com/en/products/detail/texas-instruments/TLV61048DBVR/10715594)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|cheapest option     |6 pin configuration|
+
+2. TLV61046ADBVR
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/VROP2.jpg" width="200" height="200">
+
+* $1.09
+* [Link to Product](https://www.digikey.com/en/products/detail/texas-instruments/TLV61046ADBVR/8133008)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|adjustable regulator|6 pin configuration|
+
+
+3. MCP1603T-330I/OS
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/VROP3.jpg" width="200" height="200">
+
+* $1.32
+* [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/MCP1603T-330I-OS/1098431)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|buck regulator|smaller input voltage range|
+|5 pin configuration||
+
+
+**Choice:** Option 3 MCP1603T-330I/OS
+
+**Rationale:**  I decided on option 3 because it has a similar pin configuration as the 3.3V regulator we designed in class. It is also a buck regulator, having a higher efficiency than most regulators. It does have a smaller input voltage range but my stepper motor is only using 5V.
 
