@@ -15,7 +15,14 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 
 ### PIC Microcontroller
 1. PIC16F1503-I/SL
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PIC16F1503.jpg" width="200" height="200">
 
+* $0.99
+* [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F1503-I-SL/2772041)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|Fast Shipping      |Can't communicate over UART|
 
 ### Motor Driver
 
