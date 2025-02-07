@@ -14,6 +14,8 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 ## Major Components Selection
 
 ### PIC Microcontroller
+1. PIC16F1503-I/SL
+
 
 ### Motor Driver
 
