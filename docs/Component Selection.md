@@ -32,7 +32,7 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|Has UART and SPI compatibility|Can't communicate over UART|
+|Has UART and SPI compatibility|small programming size|
 |Functions with MPX labs ||
 
 3. PIC16F1823-I/ST
