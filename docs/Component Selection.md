@@ -36,7 +36,7 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 |Functions with MPX labs ||
 
 3. PIC16F1823-I/ST
-<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PIC16F1503.jpg" width="200" height="200">
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PICOPTION3.jpg" width="200" height="200">
 
 * $1.54
 * [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F1823-I-ST/2258581)
