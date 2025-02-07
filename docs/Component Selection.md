@@ -7,7 +7,7 @@ I am responsible for the actuator and using a PIC. This will be done using a ste
 
 ## MCC Configuration
 
-<img src ="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/MCC%20CONFIG.png">
+<img src ="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/Screenshot%202025-02-07%20162354.png">
 
 I chose a 14 pin PIC as my main microcontroller as my subsystem will initially only need about 6 pins to work effectively. Two pins are designated to RX and TX pins so I can communicate to the daisy chain network. 4 pins are designated to the stepper motor driver, focusing on SCK, SDI, SDO, and SS. We have a clock, serial input, serial output, and slave select that will connect to the stepper motor driver. Other pins are free of use and can be used for debugging purposes.
 
@@ -32,7 +32,7 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|Has UART and SPI compatibility|small programming size (24kB) compared to 128 kB used in class|
+|Has UART and SPI compatibility|small programming size (28kB) compared to 128 kB used in class|
 |Functions with MPX labs ||
 
 3. PIC18F14Q20T-I/SS
