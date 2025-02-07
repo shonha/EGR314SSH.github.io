@@ -50,7 +50,40 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 **Rationale:** I chose this specific microcontroller because it can communicate with UART and use an SPI to effectively control my stepper motor driver. It also has the necessary pins for the entire subsystem, leaving out extra pins for debugging purposes. It also works with MPX labs and the snap programmer. It also needs around 2.3V -5.5V to power which works perfectly with the switching regulator. The max current for GPIO pins are 50 mA and about 250 mA for the entire package. 
 
 ### Motor Driver
-1.
+1. DRV8434SRGER
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/MDOP1.jpg" width="200" height="200">
+
+* $3.13
+* [Link to Product](https://www.digikey.com/en/products/detail/texas-instruments/DRV8434SRGER/13627140)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|can communicate with SPI     |hard to solder/almost impossible|
+
+2. DRV8434SPWPR
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/MDOP2.jpg" width="200" height="200">
+
+* $3.21
+* [Link to Product](https://www.digikey.com/en/products/detail/texas-instruments/DRV8434SPWPR/15857251)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|several half bridges|bigger than other options|
+
+
+3. DRV8889QPWPRQ1
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/MDOP3.jpg" width="200" height="200">
+
+* $4.17
+* [Link to Product](https://www.digikey.com/en/products/detail/texas-instruments/DRV8889QPWPRQ1/11615769)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|can communicate with SPI|expensive option|
+
+**Choice:** Option 2 DRV8434SRGER
+
+**Rationale:** I chose option 3 because it is able to support a 5V stepper motor. It is also compatible with my PIC I chose after doing some research. Although it is the most expensive option, it also has good thermal padding and operating temperatures.
 ### Stepper Motor
 
 ### 5V Power Supply
