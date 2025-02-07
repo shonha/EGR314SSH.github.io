@@ -24,15 +24,15 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 |-------------------|--------------------------|
 |Fast Shipping      |Can't communicate over UART|
 
-2. PIC16F15323-I/SL
+2. PIC16F18326-I/SL
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PIC16F1503.jpg" width="200" height="200">
 
-* $0.84
-* [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15323-I-SL/7164779)
+* $1.39
+* [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F18326-I-SL/6098362)
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|Has UART and SPI compatibility|small programming size (3.5kB)|
+|Has UART and SPI compatibility|small programming size (24kB) compared to 128 kB used in class|
 |Functions with MPX labs ||
 
 3. PIC18F14Q20T-I/SS
@@ -44,9 +44,9 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 |Pros               |Cons                      |
 |-------------------|--------------------------|
 |UART and SPI compatibility|compatibility issues|
-| 16kB programming memory||
 
-**Choice:** Option 2 PIC16F15323-I/SL
+
+**Choice:** Option 2 PIC16F18326-I/SL
 
 **Rationale:** I chose this specific microcontroller because it can communicate with UART and use an SPI to effectively control my stepper motor driver. It also has the necessary pins for the entire subsystem, leaving out extra pins for debugging purposes. It also works with MPX labs and the snap programmer. It also needs around 2.3V -5.5V to power which works perfectly with the switching regulator. The max current for GPIO pins are 50 mA and about 250 mA for the entire package. 
 
