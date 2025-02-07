@@ -121,4 +121,43 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 **Rationale:**  I chose option 1 because it is by far the cheapest out of all the options as stepper motors are really expensive. It does not have bipolar capabilities but can still be used for bidirectional control. 
 ### 5V Power Supply
 
-### 3.3V Voltage Regulator
+1. SWI3-5-N-MUB
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PSOP1.jpg" width="200" height="200">
+
+* $4.90
+* [Link to Product](https://www.digikey.com/en/products/detail/cui-inc/SWI3-5-N-MUB/7784529)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|cheapesst option     |low current output|
+
+2. QSH4218-51-10-049
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PSOP2.jpg" width="200" height="200">
+
+* $6.75
+* [Link to Product](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R06H-050/7682614)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|smallest charging block|low current output|
+
+
+3. 42M100B1B
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PSOP3.jpg" width="200" height="200">
+
+* $6.82
+* [Link to Product](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R12-050U/7682629)
+
+|Pros               |Cons                      |
+|-------------------|--------------------------|
+|high current potential|most expensive option|
+
+
+**Choice:** Option 3 L6R12-050U
+
+**Rationale:**  I chose option 3 because it supplies the highest current which will be needed for my stepper motor. It also has a USB power jack, making it convenient to carry around. It is the most expensive option but only about thirty more cents.
+
+### 3.3V Switching Regulator
+
+
+
