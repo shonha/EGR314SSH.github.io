@@ -1,5 +1,5 @@
 ---
-title: Second Page
+title: Subsystem Schematic
 ---
 
 Things to discuss
