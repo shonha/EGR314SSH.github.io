@@ -181,11 +181,11 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 |adjustable regulator|6 pin configuration|
 
 
-3. MCP1603T-330I/OS
-<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/VROP3.jpg" width="200" height="200">
+3. LM2575-3.3WU
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SR4REALONE.png" width="200" height="200">
 
-* $1.32
-* [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/MCP1603T-330I-OS/1098431)
+* $1.75
+* [Link to Product](https://www.mouser.com/ProductDetail/Microchip-Technology/LM2575-33WU?qs=kh6iOki%2FeLFl2EB4QdXuKA%3D%3D&utm_id=8790913657&gad_source=1&gclid=CjwKCAiA74G9BhAEEiwA8kNfpSM8OPXtxbaCHgvZc1sHfrbZeLMksdtZdrtF3OnQCLQ7SpuZGOPnvhoC3ikQAvD_BwE)
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
@@ -193,7 +193,7 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 |5 pin configuration||
 
 
-**Choice:** Option 3 MCP1603T-330I/OS
+**Choice:** Option 3 LM2575-3.3WU
 
 **Rationale:**  I decided on option 3 because it has a similar pin configuration as the 3.3V regulator we designed in class. It is also a buck regulator, having a higher efficiency than most regulators. It does have a smaller input voltage range but my stepper motor is only using 5V.
 
