@@ -1,3 +1,0 @@
----
-Title: Power Budget Table
----
