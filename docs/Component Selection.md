@@ -195,5 +195,4 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 
 **Choice:** Option 3 LM2575-3.3WU
 
-**Rationale:**  I decided on option 3 because it has a similar pin configuration as the 3.3V regulator we designed in class. It is also a buck regulator, having a higher efficiency than most regulators. It does have a smaller input voltage range but my stepper motor is only using 5V.
-
+**Rationale:**  I decided on option 3 because it has a similar pin configuration as the 3.3V regulator we designed in class. It is also a buck regulator, having a higher efficiency than most regulators. It also can take an input of 12V which is the amount of power coming from the daisy chain network.
