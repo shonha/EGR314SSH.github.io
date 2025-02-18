@@ -144,7 +144,7 @@ I chose a 14 pin PIC as my main microcontroller as my subsystem will initially o
 
 
 3. L6R24-120
-<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PSUOP4.jpg" width="200" height="200">
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/L6R24_Wall-Mount.jpg" width="200" height="200">
 
 * $8.95
 * [Link to Product](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R24-120/7682639)
