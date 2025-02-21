@@ -1,5 +1,5 @@
 ---
-title: Subsystem Schematic
+title: Schematic Design
 ---
 
 Things to discuss
