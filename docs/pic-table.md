@@ -4,13 +4,13 @@ title: PIC Table
 
 | ESP Info                                      | Answer | Help                                                                                                      |
 | --------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
-| Model                                         | PIC16F18326-I/SL   | Include the entire part number (leave off any letters at the end that specify the package type)           |
-| Product Page URL                              | [Product](https://www.microchipdirect.com/product/PIC16F18326-I/SL?srsltid=AfmBOorK4ceF7my5exiNesi-Z9Dhj0CgrxplnHs46cMxhXqAmbtBimiT)   | Do not paste links directly into the table.  Use a [link](#)                                            |
-| Datasheet URL(s)                              | [Datasheet](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/40001839E.pdf)     | Do not paste links directly into the table.  Use a [link](#)                                              |
-| Application Notes URL(s)                      | [Applications](https://www.microchip.com/en-us/product/pic16f18326)      | Do not paste links directly into the table.  Use a [link](#)                                              |
-| Vendor link                                   | [Vendor](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F18326-I-SL/6098362)      | Digikey, Jameco, etc.  Do not paste links directly into the table.  Use a [link](#)                       |
+| Model                                         | PIC18F27Q10-I/SO  | Include the entire part number (leave off any letters at the end that specify the package type)           |
+| Product Page URL                              | [Product](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)   | Do not paste links directly into the table.  Use a [link](#)                                            |
+| Datasheet URL(s)                              | [Datasheet](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf)     | Do not paste links directly into the table.  Use a [link](#)                                              |
+| Application Notes URL(s)                      | [Applications](https://www.microchipdirect.com/product/PIC18F27Q10-I/SO?samples=true&srsltid=AfmBOoqHxXvy2E0P069tvmeh0Chlew5zwOocES04W6F65gD28_CFR6sM)      | Do not paste links directly into the table.  Use a [link](#)                                              |
+| Vendor link                                   | [Vendor](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)      | Digikey, Jameco, etc.  Do not paste links directly into the table.  Use a [link](#)                       |
 | Code Examples                                 | N/A     | url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals |
-| External Resources URL(s)                     | [External Resources](https://www.microchip.com/en-us/product/pic16f15323)    | Search on Google and YouTube for other resources for each specific microcontroller.                       |
+| External Resources URL(s)                     | [External Resources](https://www.microchipdirect.com/product/PIC18F27Q10-I/SO?samples=true&srsltid=AfmBOoqHxXvy2E0P069tvmeh0Chlew5zwOocES04W6F65gD28_CFR6sM)    | Search on Google and YouTube for other resources for each specific microcontroller.                       |
 | Unit cost                                     | $0.84     | Find in the Microchip online store, or Digikey                                                            |
 | Absolute Maximum Current for entire IC        | 350 mA      | Find in the microcontroller datasheet                                                                     |
 | Supply Voltage Range                          | 2.3V-5.5V      | Min / Nominal / Max / Absolute Max, as found in datasheet                                                 |
@@ -24,12 +24,12 @@ title: PIC Table
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
-| GPIO       |11           | 0      | *                              |
-| ADC        | 11           | 0      | *                              |
-| UART       | 2           | 2      | RC4-RC5                              |
-| SPI        | 4           | 4      | RC0-RC3                             |
-| I2C        | 11           | 0      | *                              |
-| PWM        | 11           | 0      | *                              |
-| ICSP       | 1           | 1      | RA3                             |
+| GPIO       |23           | 0      | *                              |
+| ADC        | 23           | 0      | *                              |
+| UART       | 4           | 2      | RB0-RB3                              |
+| SPI        | 8           | 4      | RC6-RC7                             |
+| I2C        | 4           | 0      | *                              |
+| PWM        | 23           | 0      | *                              |
+| ICSP       | 1           | 1      | RE3                             |
 | ...        | ...         | ...    | ...                            |
 
