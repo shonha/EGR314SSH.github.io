@@ -8,7 +8,7 @@ Hello, My name is Shon and this is my individual website for the stepper motor s
 |Assignments|Dates|
 |---------------|--------------|
 |Block Diagram| 1/31|
-|Component Selection|2/7|
+|Component Selection & PIC Table|2/7|
 |Schematic Design|2/21|
 |Power Budget|2/21|
 |External Design Review|2/24|
