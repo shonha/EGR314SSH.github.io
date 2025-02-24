@@ -18,3 +18,5 @@ Hello, My name is Shon and this is my individual website for the stepper motor s
 |Subsystem Hardware Verification|TBD|
 |Software Implementation|TBD|
 |Innovation Showcase|5/2|
+
+[Team Website](https://egr314-2025-s-311.github.io/T311.github.io/)
