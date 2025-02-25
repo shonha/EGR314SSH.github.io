@@ -86,11 +86,11 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 **Rationale:** I chose option 3 because it is able to support a 5V stepper motor. It is also compatible with my PIC I chose after doing some research. Although it is the most expensive option, it also has good thermal padding and operating temperatures.
 ### Stepper Motor
-1. MOT-I-81656
-<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SM4POSS.png" width="200" height="200">
+1. 42HS40-1704B
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/cheapmotor.png" width="200" height="200">
 
-* $25.96
-* [Link to Product](https://www.digikey.com/en/products/detail/isl-products-international/MOT-I-81656/22168752)
+* $13.95
+* [Link to Product](https://www.jameco.com/z/42HS40-1704B-Jameco-ReliaPro-12-VDC-Two-Phase-Bipolar-Hybrid-Stepper-Motor-1-8-deg-Step-200-Steps_2327183.html)
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
@@ -117,7 +117,7 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 |-------------------|--------------------------|
 |bipolar/hybrid|no datasheet and hard to wire|
 
-**Choice:** Option 1 MOT-I-81656
+**Choice:** Option 1 42HS40-1704B
 
 **Rationale:**  I chose option 1 because it is by far the cheapest out of all the options as stepper motors are really expensive. It also has bipolar capabilities, being able be controlled bidirectionally in response to project constraints.  
 ### 12V Power Supply
