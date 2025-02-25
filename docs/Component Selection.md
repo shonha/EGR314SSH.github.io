@@ -186,7 +186,7 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SR4REALONE.png" width="200" height="200">
 
 * $1.75
-* [Link to Product](https://www.mouser.com/ProductDetail/Microchip-Technology/LM2575-33WU?qs=kh6iOki%2FeLFl2EB4QdXuKA%3D%3D&utm_id=8790913657&gad_source=1&gclid=CjwKCAiA74G9BhAEEiwA8kNfpSM8OPXtxbaCHgvZc1sHfrbZeLMksdtZdrtF3OnQCLQ7SpuZGOPnvhoC3ikQAvD_BwE)
+* [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3.3WU-TR/16679441?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Medium%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20223376311_adg-_ad-__dev-c_ext-_prd-16679441_sig-CjwKCAiAzvC9BhADEiwAEhtlNzgovozCst-eYHqQ_QTT8CnWAbNFBMAkZ4CDkSU5XGTwzjRZVjpIaRoC3hsQAvD_BwE&gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlNzgovozCst-eYHqQ_QTT8CnWAbNFBMAkZ4CDkSU5XGTwzjRZVjpIaRoC3hsQAvD_BwE&gclsrc=aw.ds)
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
