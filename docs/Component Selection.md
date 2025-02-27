@@ -86,15 +86,15 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 **Rationale:** I chose option 3 because it is able to support a 5V stepper motor. It is also compatible with my PIC I chose after doing some research. Although it is the most expensive option, it also has good thermal padding and operating temperatures.
 ### Stepper Motor
-1. 42HS40-1704B
-<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/cheapmotor.png" width="200" height="200">
+1. 35BYHJ30-36A
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/STEPPERMOTORCHEAPEST.png" width="200" height="200">
 
-* $13.95
-* [Link to Product](https://www.jameco.com/z/42HS40-1704B-Jameco-ReliaPro-12-VDC-Two-Phase-Bipolar-Hybrid-Stepper-Motor-1-8-deg-Step-200-Steps_2327183.html)
+* $2.65
+* [Link to Product](https://www.jameco.com/z/35BYHJ30-36A-Fulling-Motor-USA-Bipolar-Stepper-Motor-12VDC-259-mA-7-5-deg-48-Steps_2234476.html?CID=GOOG&gad_source=1&gclid=CjwKCAiAlPu9BhAjEiwA5NDSA3S3xKQSO3o9rV3IAYmnlmhb64g-l5FYRvc8DqAq_hisXs7W4HKWGxoCDoUQAvD_BwE)
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|cheapest option     |1.8 degree step angle|
+|cheapest option     |7.5 degree step angle|
 
 2. QSH4218-51-10-049
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SMOP2.jpg" width="200" height="200">
@@ -117,9 +117,9 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 |-------------------|--------------------------|
 |bipolar/hybrid|no datasheet and hard to wire|
 
-**Choice:** Option 1 42HS40-1704B
+**Choice:** Option 1 35BYHJ30-36A
 
-**Rationale:**  I chose option 1 because it is by far the cheapest out of all the options as stepper motors are really expensive. It also has bipolar capabilities, being able be controlled bidirectionally in response to project constraints.  
+**Rationale:**  I chose option 1 because it is by far the cheapest out of all the options as stepper motors are really expensive. It also has bipolar capabilities, being able be controlled bidirectionally in response to project constraints. 
 ### 12V Power Supply
 
 1. SWI3-5-N-MUB
