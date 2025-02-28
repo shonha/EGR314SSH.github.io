@@ -12,7 +12,7 @@ Hello, My name is Shon and this is my individual website for the stepper motor s
 |Schematic Design|2/21|
 |Power Budget|2/21|
 |External Design Review|2/24|
-|BOM & Hardware Orders|TBD|
+|BOM & Hardware Orders|2/28|
 |Subsystem PCB Design|TBD|
 |Individual API Documentation|TBD|
 |Subsystem Hardware Verification|TBD|
