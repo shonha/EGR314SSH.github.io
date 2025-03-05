@@ -84,7 +84,7 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 **Choice:** Option 3 DRV8889QPWPRQ1
 
-**Rationale:** I chose option 3 because it is able to support a 5V stepper motor. It is also compatible with my PIC I chose after doing some research. Although it is the most expensive option, it also has good thermal padding and operating temperatures.
+**Rationale:** I chose option 3 because it is able to support a 12V stepper motor. It is also compatible with my PIC I chose after doing some research. Although it is the most expensive option, it also has good thermal padding and operating temperatures.
 ### Stepper Motor
 1. 35BYHJ30-36A
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SM5.png" width="200" height="200">
