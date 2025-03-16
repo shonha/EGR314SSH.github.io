@@ -29,7 +29,7 @@ Title: BOM
 
 
 
-<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/BOMV2.png">
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/BOM%20.png">
 
 [Bill of Materials Download](https://github.com/shonha/EGR314SSH.github.io/blob/main/Documentation/EGR314%20BOM.xlsx)
 
