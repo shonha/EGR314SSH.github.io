@@ -36,8 +36,8 @@ Title: API
 | Variable Name | sensor_one | L1_Reading | sensor_two | L2_Reading | sensor_three | L3_Reading | sensor_four | L4_Reading |
 | Variable Type | char       | float      | char       | float      | char         | float      | char        | float      |
 | Min Value     | L1         | 0          | L2         | 0          | L3           | 0          | L4          | 0          |
-| Max Value     | L1         | 9999       | L3         | 9999       | L3           | 9999       | L4          | 9999       |
-| Example       | L1         | 3567       | L4         | 2343       | L3           | 1232       | L4          | 2142       |
+| Max Value     | L1         | 9999       | L2         | 9999       | L3           | 9999       | L4          | 9999       |
+| Example       | L1         | 3567       | L2         | 2343       | L3           | 1232       | L4          | 2142       |
 
 ### Message Type 4 (Button - digital signal)
 
