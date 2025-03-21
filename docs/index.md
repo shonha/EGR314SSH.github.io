@@ -14,7 +14,7 @@ Hello, My name is Shon and this is my individual website for the stepper motor s
 |External Design Review|2/24|
 |BOM & Hardware Orders|2/28|
 |Subsystem PCB Design|TBD|
-|Individual API Documentation|TBD|
+|Individual API Documentation|3/28|
 |Subsystem Hardware Verification|TBD|
 |Software Implementation|TBD|
 |Innovation Showcase|5/2|
