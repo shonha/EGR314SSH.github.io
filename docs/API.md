@@ -1,7 +1,7 @@
 ---
 Title: API
 ---
-## Messages Sent
+## Messages Sent/Broadcasted
 ### Message Type 3 (Voltage Readings from Solar Panel)
 
 <b><i>Received and Forwarded to MQTT</i></b>
