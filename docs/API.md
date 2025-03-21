@@ -41,3 +41,17 @@ Title: API
 | Max Value     | 1           | 1            |
 | Example       | 0           | 1            |
 ## Message Handling Process Flow
+### Messages Received
+
+```mermaid
+flowchart TD
+    A[UART Message Received] --> B{Break down messages based upon message types}
+    B --> |Message Type #3|K
+    B --> |For Message Type #1| D{Read Message Type} -->|Automatic| G[State 0] 
+    D -->|Manual| J[State 1]
+    B -->|For Message Type #2| E{Compare all four readings} -->|Highest Reading| H[Rotate Stepper motor towards direction]
+    E-->|Lowest Readings|L[Trash messages]
+    J -->  K{Control Motor with Two Buttons}
+    K --> |Left Button| C[Turn Stepper Motor CW]
+    K --> |Right Button| M[Turn Stepper Motor CCW]
+```
