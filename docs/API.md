@@ -57,7 +57,7 @@ Title: API
 ```mermaid
 flowchart TD
     A[UART Message Received] --> B{Break down messages based upon message types}
-    B --> |Message Type #3|K
+    B --> |Message Type #4|K
     B --> |For Message Type #1| D{Read Message Type} -->|Automatic| G[State 0] 
     D -->|Manual| J[State 1]
     B -->|For Message Type #2| E{Compare all four readings and store into array} -->|Highest Reading| H[Rotate Stepper motor towards direction]
