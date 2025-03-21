@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#team-definitions" class="md-skip">
+        <a href="#messages-sent" class="md-skip">
           Skip to content
         </a>
       
@@ -472,23 +472,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#team-definitions" class="md-nav__link">
-    Team Definitions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#messages-sent" class="md-nav__link">
     Messages Sent
   </a>
   
+    <nav class="md-nav" aria-label="Messages Sent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3-voltage-readings-from-solar-panel" class="md-nav__link">
+    Message Type 3 (Voltage Readings from Solar Panel)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#messages-recieved" class="md-nav__link">
-    Messages Recieved
+  <a href="#messages-received" class="md-nav__link">
+    Messages Received
   </a>
+  
+    <nav class="md-nav" aria-label="Messages Received">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-1-wifi-toggle-automanual" class="md-nav__link">
+    Message Type 1 (Wifi Toggle - Auto/Manual)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-2-optical-sensor-readings" class="md-nav__link">
+    Message Type 2 (Optical Sensor Readings)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3-button-digital-signal" class="md-nav__link">
+    Message Type 3 (Button - digital signal)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -689,23 +722,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#team-definitions" class="md-nav__link">
-    Team Definitions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#messages-sent" class="md-nav__link">
     Messages Sent
   </a>
   
+    <nav class="md-nav" aria-label="Messages Sent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3-voltage-readings-from-solar-panel" class="md-nav__link">
+    Message Type 3 (Voltage Readings from Solar Panel)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#messages-recieved" class="md-nav__link">
-    Messages Recieved
+  <a href="#messages-received" class="md-nav__link">
+    Messages Received
   </a>
+  
+    <nav class="md-nav" aria-label="Messages Received">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-1-wifi-toggle-automanual" class="md-nav__link">
+    Message Type 1 (Wifi Toggle - Auto/Manual)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-2-optical-sensor-readings" class="md-nav__link">
+    Message Type 2 (Optical Sensor Readings)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3-button-digital-signal" class="md-nav__link">
+    Message Type 3 (Button - digital signal)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -741,9 +807,44 @@
 
   <h1>API</h1>
 
-<h2 id="team-definitions">Team Definitions</h2>
 <h2 id="messages-sent">Messages Sent</h2>
-<h2 id="messages-recieved">Messages Recieved</h2>
+<h3 id="message-type-3-voltage-readings-from-solar-panel">Message Type 3 (Voltage Readings from Solar Panel)</h3>
+<p><b><i>Received and Forwarded to MQTT</i></b>
+|               | Byte 1         | Byte 2-5        |
+|---------------|----------------|-----------------|
+| Variable Name | voltage_sensor | voltage_reading |
+| Variable Type | char           | float           |
+| Min Value     | V              | 0.000           |
+| Max Value     | V              | 8.222           |
+| Example       | V              | 7.567           |</p>
+<h2 id="messages-received">Messages Received</h2>
+<h3 id="message-type-1-wifi-toggle-automanual">Message Type 1 (Wifi Toggle - Auto/Manual)</h3>
+<p><b><i>Used to toggle stepper motor functionality from automatic (state 0) to manual (state 1).</i></b>
+|               | Byte 1      |<br />
+|---------------|-------------|
+| Variable Name | auto_toggle | <br />
+| Variable Type | uint8_t     | <br />
+| Min Value     | 0           | <br />
+| Max Value     | 1           | <br />
+| Example       | 1           |   </p>
+<h3 id="message-type-2-optical-sensor-readings">Message Type 2 (Optical Sensor Readings)</h3>
+<p><b><i>Used to determine where the stepper motor will rotate, facing the solar panel towards the highest light level detected by the optical sensors. Bytes 1-2 act as an identifier, allowing the stepper motor to determine which way to face once all four readings have been sent.</i></b>
+|               | Byte 1-2   | Byte 3-6   | Byte 7-8   | Byte 9-12  | Byte 13-14   | Byte 15-18 | Byte 19-20  | Byte 21-24 |
+|---------------|------------|------------|------------|------------|--------------|------------|-------------|------------|
+| Variable Name | sensor_one | L1_Reading | sensor_two | L2_Reading | sensor_three | L3_Reading | sensor_four | L4_Reading |
+| Variable Type | char       | float      | char       | float      | char         | float      | char        | float      |
+| Min Value     | L1         | 0          | L2         | 0          | L3           | 0          | L4          | 0          |
+| Max Value     | L1         | 9999       | L3         | 9999       | L3           | 9999       | L4          | 9999       |
+| Example       | L1         | 3567       | L4         | 2343       | L3           | 1232       | L4          | 2142       |</p>
+<h3 id="message-type-3-button-digital-signal">Message Type 3 (Button - digital signal)</h3>
+<p><b><i>Used to manually control stepper motors from left to right. It has two states (0) and (1) to determine if the button has been pressed.</i></b>
+|               | Byte 1      | Byte 2       |
+|---------------|-------------|--------------|
+| Variable Name | button_left | button_right |
+| Variable Type | uint8_t     | uint8_t      |
+| Min Value     | 0           | 0            |
+| Max Value     | 1           | 1            |
+| Example       | 0           | 1            |</p>
 <h2 id="message-handling-process-flow">Message Handling Process Flow</h2>
 
 
