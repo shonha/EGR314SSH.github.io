@@ -11,8 +11,8 @@ Title: API
 | Variable Name | voltage_sensor | voltage_reading |
 | Variable Type | char           | float           |
 | Min Value     | V              | 0.000           |
-| Max Value     | V              | 8.222           |
-| Example       | V              | 7.567           |
+| Max Value     | V              | 5.500           |
+| Example       | V              | 3.400           |
 
 ## Messages Received
 ### Message Type 1 (Wifi Toggle - Auto/Manual)
