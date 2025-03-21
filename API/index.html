@@ -530,6 +530,19 @@
     Message Handling Process Flow
   </a>
   
+    <nav class="md-nav" aria-label="Message Handling Process Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#messages-received_1" class="md-nav__link">
+    Messages Received
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -780,6 +793,19 @@
     Message Handling Process Flow
   </a>
   
+    <nav class="md-nav" aria-label="Message Handling Process Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#messages-received_1" class="md-nav__link">
+    Messages Received
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -846,6 +872,17 @@
 | Max Value     | 1           | 1            |
 | Example       | 0           | 1            |</p>
 <h2 id="message-handling-process-flow">Message Handling Process Flow</h2>
+<h3 id="messages-received_1">Messages Received</h3>
+<pre class="mermaid"><code>flowchart TD
+    A[UART Message Received] --&gt; B{Break down messages based upon message types}
+    B --&gt; |Message Type #3|K
+    B --&gt; |For Message Type #1| D{Read Message Type} --&gt;|Automatic| G[State 0] 
+    D --&gt;|Manual| J[State 1]
+    B --&gt;|For Message Type #2| E{Compare all four readings} --&gt;|Highest Reading| H[Rotate Stepper motor towards direction]
+    E--&gt;|Lowest Readings|L[Trash messages]
+    J --&gt;  K{Control Motor with Two Buttons}
+    K --&gt; |Left Button| C[Turn Stepper Motor CW]
+    K --&gt; |Right Button| M[Turn Stepper Motor CCW]</code></pre>
 
 
 
