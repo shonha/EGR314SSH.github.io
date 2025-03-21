@@ -39,7 +39,7 @@ Title: API
 | Max Value     | L1         | 9999       | L3         | 9999       | L3           | 9999       | L4          | 9999       |
 | Example       | L1         | 3567       | L4         | 2343       | L3           | 1232       | L4          | 2142       |
 
-### Message Type 3 (Button - digital signal)
+### Message Type 4 (Button - digital signal)
 
 <b><i>Used to manually control stepper motors from left to right. It has two states (0) and (1) to determine if the button has been pressed.</i></b>
 
