@@ -1,6 +1,13 @@
 ---
 Title: API
 ---
+## Team Bytes
+| Byte | Function |
+|----|-------|
+| AZ | Start |
+| YB | Stop  |
+
+
 ## Messages Sent/Broadcasted
 ### Message Type 3 (Voltage Readings from Solar Panel)
 
