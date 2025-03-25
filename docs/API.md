@@ -26,13 +26,13 @@ Title: API
 
 <b><i>Used to toggle stepper motor functionality from automatic (state 0) to manual (state 1).</i></b>
 
-|               | Byte 1      |  
-|---------------|-------------|
-| Variable Name | auto_toggle |   
-| Variable Type | uint8_t     |   
-| Min Value     | 0           |   
-| Max Value     | 1           |   
-| Example       | 1           |   
+|               | Byte 1      | Byte 2 |
+|---------------|-------------|--------|
+| Variable Name | mode | mode_toggle |  
+| Variable Type | char    |  uint8_t| 
+| Min Value     | M           |   0|
+| Max Value     | M           |   1|
+| Example       | M           |   1|
 
 ### Message Type 2 (Optical Sensor Readings)
 
@@ -50,13 +50,13 @@ Title: API
 
 <b><i>Used to manually control stepper motors from left to right. It has two states (0) and (1) to determine if the button has been pressed.</i></b>
 
-|               | Byte 1      | Byte 2       |
-|---------------|-------------|--------------|
-| Variable Name | button_left | button_right |
-| Variable Type | uint8_t     | uint8_t      |
-| Min Value     | 0           | 0            |
-| Max Value     | 1           | 1            |
-| Example       | 0           | 1            |
+|               | Byte 1      | Byte 2       | Byte 3 | Byte 4 |
+|---------------|-------------|--------------|--------|--------|
+| Variable Name | left_button | button_left_toggle |right_buttom| button_right_toggle|
+| Variable Type | char     | uint8_t      | char| uint8_t
+| Min Value     | L           | 0            | R|0|
+| Max Value     | L           | 1            |R|1|
+| Example       | L           | 1            |R|0|
 
 ## Message Handling Process Flow
 ### Messages Received
