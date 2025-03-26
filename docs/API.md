@@ -7,6 +7,12 @@ Title: API
 | AZ | Start |
 | YB | Stop  |
 
+| Unique ID | Byte |
+|-----|-----|
+|Shon Ha| H |
+|Maximus Mathews|M|
+|Rohan Fernandez|F|
+|Shelton Larance|L|
 
 ## Messages Sent/Broadcasted
 ### Message Type 3 (Voltage Readings from Solar Panel)
