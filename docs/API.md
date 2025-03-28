@@ -65,6 +65,11 @@ Title: API
 | Example       | L           | 1            |R|0|
 
 ## Message Handling Process Flow
+### Example Messages
+|    | Message |
+|-----|--------|
+|Received| AZMHM0S13452S27865S36162S42919V2818L1R0YB|
+|Sent| AZHLV2818YB |
 ### Messages Received
 
 ```mermaid
