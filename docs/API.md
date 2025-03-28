@@ -22,10 +22,10 @@ Title: API
 |               | Byte 1         | Byte 2-5        |
 |---------------|----------------|-----------------|
 | Variable Name | voltage_sensor | voltage_reading |
-| Variable Type | char           | float           |
-| Min Value     | V              | 0.000           |
-| Max Value     | V              | 5.500           |
-| Example       | V              | 3.400           |
+| Variable Type | char           | int           |
+| Min Value     | V              | 0000           |
+| Max Value     | V              | 5400           |
+| Example       | V              | 2572           |
 
 ## Messages Received
 ### Message Type 1 (Wifi Toggle - Auto/Manual)
@@ -47,8 +47,8 @@ Title: API
 |               | Byte 1-2   | Byte 3-6   | Byte 7-8   | Byte 9-12  | Byte 13-14   | Byte 15-18 | Byte 19-20  | Byte 21-24 |
 |---------------|------------|------------|------------|------------|--------------|------------|-------------|------------|
 | Variable Name | sensor_one | L1_Reading | sensor_two | L2_Reading | sensor_three | L3_Reading | sensor_four | L4_Reading |
-| Variable Type | char       | float      | char       | float      | char         | float      | char        | float      |
-| Min Value     | S1         | 0          | S2         | 0          | S3           | 0          | S4          | 0          |
+| Variable Type | char       | int      | char       | int      | char         | int      | char        | int      |
+| Min Value     | S1         | 0000          | S2         | 0000          | S3           | 0000          | S4          | 0000          |
 | Max Value     | S1         | 9999       | S2         | 9999       | S3           | 9999       | S4          | 9999       |
 | Example       | S1         | 3567       | S2         | 2343       | S3           | 1232       | S4          | 2142       |
 
