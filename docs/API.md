@@ -36,9 +36,9 @@ Title: API
 |---------------|-------------|--------|
 | Variable Name | mode | mode_toggle |  
 | Variable Type | char    |  uint8_t| 
-| Min Value     | M           |   0|
-| Max Value     | M           |   1|
-| Example       | M           |   1|
+| Min Value     | m           |   0|
+| Max Value     | m           |   1|
+| Example       | m           |   1|
 
 ### Message Type 2 (Optical Sensor Readings)
 
@@ -68,7 +68,7 @@ Title: API
 ### Example Messages
 |    | Message |
 |-----|--------|
-|Received| AZMHM0S13452S27865S36162S42919V2818L1R0YB|
+|Received| AZMHm0S13452S27865S36162S42919V2818L1R0YB|
 |Sent| AZHLV2818YB |
 ### Messages Received
 
