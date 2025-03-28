@@ -9,10 +9,10 @@ Title: API
 
 | Unique ID | Byte |
 |-----|-----|
-|Shon Ha| H |
-|Maximus Mathews|M|
-|Rohan Fernandez|F|
-|Shelton Larance|L|
+|Shon Ha| h |
+|Maximus Mathews|m|
+|Rohan Fernandez|f|
+|Shelton Larance|l|
 
 ## Messages Sent/Broadcasted
 ### Message Type 3 (Voltage Readings from Solar Panel)
@@ -36,9 +36,9 @@ Title: API
 |---------------|-------------|--------|
 | Variable Name | mode | mode_toggle |  
 | Variable Type | char    |  uint8_t| 
-| Min Value     | m           |   0|
-| Max Value     | m           |   1|
-| Example       | m           |   1|
+| Min Value     | M           |   0|
+| Max Value     | M           |   1|
+| Example       | M           |   1|
 
 ### Message Type 2 (Optical Sensor Readings)
 
