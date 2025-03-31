@@ -14,7 +14,7 @@ Title: API
 |Rohan Fernandez|f|
 |Shelton Larance|l|
 
-## Messages Sent/Broadcasted
+## Messages Sent
 ### Message Type 3 (Voltage Readings from Solar Panel)
 
 <b><i>Received and Forwarded to MQTT</i></b>
