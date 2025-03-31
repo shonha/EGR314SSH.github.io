@@ -22,7 +22,7 @@ Title: API
 |               | Byte 1         | Byte 2-5        |
 |---------------|----------------|-----------------|
 | Variable Name | voltage_sensor | voltage_reading |
-| Variable Type | char           | char          |
+| Variable Type | char           | uint16_t          |
 | Min Value     | V              | 0000           |
 | Max Value     | V              | 5400           |
 | Example       | V              | 2572           |
@@ -35,7 +35,7 @@ Title: API
 |               | Byte 1      | Byte 2 |
 |---------------|-------------|--------|
 | Variable Name | mode | mode_toggle |  
-| Variable Type | char    |  char| 
+| Variable Type | char    |  uint8_t | 
 | Min Value     | M           |   0|
 | Max Value     | M           |   1|
 | Example       | M           |   1|
@@ -47,7 +47,7 @@ Title: API
 |               | Byte 1-2   | Byte 3-6   | Byte 7-8   | Byte 9-12  | Byte 13-14   | Byte 15-18 | Byte 19-20  | Byte 21-24 |
 |---------------|------------|------------|------------|------------|--------------|------------|-------------|------------|
 | Variable Name | sensor_one | L1_Reading | sensor_two | L2_Reading | sensor_three | L3_Reading | sensor_four | L4_Reading |
-| Variable Type | char       | char      | char       | char      | char         | char      | char        | char      |
+| Variable Type | char       | uint16_t       | char       | uint16_t       | char         | uint16_t       | char        | uint16_t       |
 | Min Value     | S1         | 0000          | S2         | 0000          | S3           | 0000          | S4          | 0000          |
 | Max Value     | S1         | 9999       | S2         | 9999       | S3           | 9999       | S4          | 9999       |
 | Example       | S1         | 3567       | S2         | 2343       | S3           | 1232       | S4          | 2142       |
@@ -59,7 +59,7 @@ Title: API
 |               | Byte 1      | Byte 2       | Byte 3 | Byte 4 |
 |---------------|-------------|--------------|--------|--------|
 | Variable Name | left_button | button_left_toggle |right_buttom| button_right_toggle|
-| Variable Type | char     | char     | char| char |
+| Variable Type | char     | uint8_t    | char| uint8_t   |
 | Min Value     | L           | 0            | R|0|
 | Max Value     | L           | 1            |R|1|
 | Example       | L           | 1            |R|0|
