@@ -19,3 +19,5 @@ title: Schematic Design
 [Schematic PDF](https://github.com/shonha/EGR314SSH.github.io/blob/main/Cadence/EGR314PDF.pdf)
 
 [PCB PDF](https://github.com/shonha/EGR314SSH.github.io/blob/main/Cadence/EGR314PDFPCB.pdf)
+
+[MPLAB Software](https://github.com/shonha/EGR314SSH.github.io/blob/main/MPLAB/Hardware_VerificationV1.zip)
