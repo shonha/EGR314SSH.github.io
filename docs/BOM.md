@@ -30,7 +30,7 @@ Title: BOM
 
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/BOM.png">
 
-[Bill of Materials Download](https://github.com/shonha/EGR314SSH.github.io/blob/main/Documentation/EGR314%20BOM.xlsx)
+[Bill of Materials Download](https://github.com/shonha/EGR314SSH.github.io/blob/main/Documentation/EGR314%20BOM%20(1).xlsx)
 
 [Digikey Order Form](https://github.com/shonha/EGR314SSH.github.io/blob/main/Documentation/EGR%20314%20Digikey.xlsx)
 
