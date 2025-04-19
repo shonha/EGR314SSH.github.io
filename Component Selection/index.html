@@ -543,6 +543,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#pic-rationale" class="md-nav__link">
+    PIC Rationale
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#major-components-selection" class="md-nav__link">
     Major Components Selection
   </a>
@@ -737,6 +744,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#pic-rationale" class="md-nav__link">
+    PIC Rationale
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#major-components-selection" class="md-nav__link">
     Major Components Selection
   </a>
@@ -814,6 +828,158 @@
 <h2 id="mcc-configuration">MCC Configuration</h2>
 <p><img src ="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/FINALPICLAY.png"> </p>
 <p>I chose a 28 pin PIC as my main microcontroller as my subsystem will initially only need about 6 pins to work effectively. Two pins are designated to RX and TX pins so I can communicate to the daisy chain network. 4 pins are designated to the stepper motor driver, focusing on SCK, SDI, SDO, and SS. We have a clock, serial input, serial output, and slave select that will connect to the stepper motor driver. Other pins are free of use and can be used for debugging purposes. The other pins are used for debugging and potential layout shifts down the road</p>
+<h2 id="pic-rationale">PIC Rationale</h2>
+<table>
+<thead>
+<tr>
+<th>ESP Info</th>
+<th>Answer</th>
+<th>Help</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model</td>
+<td>PIC18F27Q10-I/SO</td>
+<td>Include the entire part number (leave off any letters at the end that specify the package type)</td>
+</tr>
+<tr>
+<td>Product Page URL</td>
+<td><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343">Product</a></td>
+<td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
+</tr>
+<tr>
+<td>Datasheet URL(s)</td>
+<td><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">Datasheet</a></td>
+<td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
+</tr>
+<tr>
+<td>Application Notes URL(s)</td>
+<td><a href="https://www.microchipdirect.com/product/PIC18F27Q10-I/SO?samples=true&amp;srsltid=AfmBOoqHxXvy2E0P069tvmeh0Chlew5zwOocES04W6F65gD28_CFR6sM">Applications</a></td>
+<td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
+</tr>
+<tr>
+<td>Vendor link</td>
+<td><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343">Vendor</a></td>
+<td>Digikey, Jameco, etc.  Do not paste links directly into the table.  Use a <a href="#">link</a></td>
+</tr>
+<tr>
+<td>Code Examples</td>
+<td>N/A</td>
+<td>url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals</td>
+</tr>
+<tr>
+<td>External Resources URL(s)</td>
+<td><a href="https://www.microchipdirect.com/product/PIC18F27Q10-I/SO?samples=true&amp;srsltid=AfmBOoqHxXvy2E0P069tvmeh0Chlew5zwOocES04W6F65gD28_CFR6sM">External Resources</a></td>
+<td>Search on Google and YouTube for other resources for each specific microcontroller.</td>
+</tr>
+<tr>
+<td>Unit cost</td>
+<td>$0.84</td>
+<td>Find in the Microchip online store, or Digikey</td>
+</tr>
+<tr>
+<td>Absolute Maximum Current for entire IC</td>
+<td>350 mA</td>
+<td>Find in the microcontroller datasheet</td>
+</tr>
+<tr>
+<td>Supply Voltage Range</td>
+<td>2.3V-5.5V</td>
+<td>Min / Nominal / Max / Absolute Max, as found in datasheet</td>
+</tr>
+<tr>
+<td>Absolute Maximum current <br> (for entire IC)</td>
+<td>250 mA</td>
+<td>as found in datasheet</td>
+</tr>
+<tr>
+<td>Maximum GPIO current <br> (per pin)</td>
+<td>50 mA</td>
+<td>as found in datasheet</td>
+</tr>
+<tr>
+<td>Supports External Interrupts?</td>
+<td>Yes</td>
+<td>as found in datasheet</td>
+</tr>
+<tr>
+<td>Required Programming Hardware, Cost, URL</td>
+<td>MPXlabs, Snap Programmer</td>
+<td>found on the microcontroller's product page</td>
+</tr>
+<tr>
+<td>Works with MPLabX?</td>
+<td>Yes</td>
+<td>Required.  See <a href="https://www.microchip.com/development-tools">Microchip Development Tools</a></td>
+</tr>
+<tr>
+<td>Works with Microchip Code Configurator?</td>
+<td>Yes</td>
+<td>Can be validated in MPLabX.  Screenshot required.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th># Available</th>
+<th>Needed</th>
+<th>Associated Pins (or * for any)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPIO</td>
+<td>23</td>
+<td>0</td>
+<td>*</td>
+</tr>
+<tr>
+<td>ADC</td>
+<td>23</td>
+<td>0</td>
+<td>*</td>
+</tr>
+<tr>
+<td>UART</td>
+<td>4</td>
+<td>2</td>
+<td>RC6-RC7</td>
+</tr>
+<tr>
+<td>SPI</td>
+<td>8</td>
+<td>4</td>
+<td>RB0-RB3</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>4</td>
+<td>0</td>
+<td>*</td>
+</tr>
+<tr>
+<td>PWM</td>
+<td>23</td>
+<td>0</td>
+<td>*</td>
+</tr>
+<tr>
+<td>ICSP</td>
+<td>1</td>
+<td>1</td>
+<td>RE3</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
 <h2 id="major-components-selection">Major Components Selection</h2>
 <h3 id="pic-microcontroller">PIC Microcontroller</h3>
 <ol>
