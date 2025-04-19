@@ -28,7 +28,7 @@ Title: BOM
 | PIC PIC® XLP™ 18Q Microcontroller IC 8-Bit 64MHz 128KB (128K x 8) FLASH 28-SOIC |             3 |               $1.31 |                $3.93 |                $1.31 |                 $3.93 | Microchip                               | PIC18F27Q10-I/SO    | https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343                                                                                                                                                                                                                                                                                                                                                                                                                                           | https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf                                                                                    | Digikey  | PIC18F27Q10-I/SO-ND         |         3 |    2/28/2025 |          3 |       0 | IC1                             |
 
 
-<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/BOM%20.png">
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/BOM.png">
 
 [Bill of Materials Download](https://github.com/shonha/EGR314SSH.github.io/blob/main/Documentation/EGR314%20BOM.xlsx)
 
