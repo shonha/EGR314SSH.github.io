@@ -470,8 +470,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-type-3-voltage-readings-from-solar-panel" class="md-nav__link">
-    Message Type 3 (Voltage Readings from Solar Panel)
+  <a href="#message-type-2-light-readings-from-optical-sensor" class="md-nav__link">
+    Message Type 2 (Light Readings from Optical Sensor)
   </a>
   
 </li>
@@ -721,8 +721,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-type-3-voltage-readings-from-solar-panel" class="md-nav__link">
-    Message Type 3 (Voltage Readings from Solar Panel)
+  <a href="#message-type-2-light-readings-from-optical-sensor" class="md-nav__link">
+    Message Type 2 (Light Readings from Optical Sensor)
   </a>
   
 </li>
@@ -857,41 +857,47 @@
 </tbody>
 </table>
 <h2 id="messages-sent">Messages Sent</h2>
-<h3 id="message-type-3-voltage-readings-from-solar-panel">Message Type 3 (Voltage Readings from Solar Panel)</h3>
+<h3 id="message-type-2-light-readings-from-optical-sensor">Message Type 2 (Light Readings from Optical Sensor)</h3>
 <p><b><i>Received and Forwarded to MQTT</i></b></p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Byte 1</th>
-<th>Byte 2-5</th>
+<th>Byte 1-2</th>
+<th>Byte 3-6</th>
+<th>Byte 7-8</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Variable Name</td>
-<td>voltage_sensor</td>
-<td>voltage_reading</td>
+<td>sensor_one</td>
+<td>L1_Reading</td>
+<td>sensor_two</td>
 </tr>
 <tr>
 <td>Variable Type</td>
 <td>char</td>
 <td>char</td>
+<td>char</td>
 </tr>
 <tr>
 <td>Min Value</td>
-<td>V</td>
+<td>S1</td>
 <td>0000</td>
+<td>S2</td>
 </tr>
 <tr>
 <td>Max Value</td>
-<td>V</td>
-<td>5400</td>
+<td>S1</td>
+<td>9999</td>
+<td>S2</td>
 </tr>
 <tr>
 <td>Example</td>
-<td>V</td>
-<td>2572</td>
+<td>S1</td>
+<td>3567</td>
+<td>S2</td>
 </tr>
 </tbody>
 </table>
@@ -943,11 +949,6 @@
 <th>Byte 1-2</th>
 <th>Byte 3-6</th>
 <th>Byte 7-8</th>
-<th>Byte 9-12</th>
-<th>Byte 13-14</th>
-<th>Byte 15-18</th>
-<th>Byte 19-20</th>
-<th>Byte 21-24</th>
 </tr>
 </thead>
 <tbody>
@@ -956,19 +957,9 @@
 <td>sensor_one</td>
 <td>L1_Reading</td>
 <td>sensor_two</td>
-<td>L2_Reading</td>
-<td>sensor_three</td>
-<td>L3_Reading</td>
-<td>sensor_four</td>
-<td>L4_Reading</td>
 </tr>
 <tr>
 <td>Variable Type</td>
-<td>char</td>
-<td>char</td>
-<td>char</td>
-<td>char</td>
-<td>char</td>
 <td>char</td>
 <td>char</td>
 <td>char</td>
@@ -978,33 +969,18 @@
 <td>S1</td>
 <td>0000</td>
 <td>S2</td>
-<td>0000</td>
-<td>S3</td>
-<td>0000</td>
-<td>S4</td>
-<td>0000</td>
 </tr>
 <tr>
 <td>Max Value</td>
 <td>S1</td>
 <td>9999</td>
 <td>S2</td>
-<td>9999</td>
-<td>S3</td>
-<td>9999</td>
-<td>S4</td>
-<td>9999</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>S1</td>
 <td>3567</td>
 <td>S2</td>
-<td>2343</td>
-<td>S3</td>
-<td>1232</td>
-<td>S4</td>
-<td>2142</td>
 </tr>
 </tbody>
 </table>
