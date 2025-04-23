@@ -19,8 +19,8 @@ Title: API
 
 <b><i>Received and Forwarded to MQTT</i></b>
 
-|               | Byte 1-2   | Byte 3-6   | Byte 7-8   | 
-|---------------|------------|------------|------------|
+|               | Byte 1-2   | Byte 3-6   | Byte 7-8   | Byte 9-12 |
+|---------------|------------|------------|------------|-----------|
 | Variable Name | sensor_one | L1_Reading | sensor_two | L2_Reading | 
 | Variable Type | char       | char       | char       | char       | 
 | Min Value     | S1         | 0000          | S2         | 0000          |
@@ -44,8 +44,8 @@ Title: API
 
 <b><i>Used to determine where the stepper motor will rotate, facing the solar panel towards the highest light level detected by the optical sensors. Bytes 1-2 act as an identifier, allowing the stepper motor to determine which way to face once all four readings have been sent.</i></b>
 
-|               | Byte 1-2   | Byte 3-6   | Byte 7-8   | 
-|---------------|------------|------------|------------|
+|               | Byte 1-2   | Byte 3-6   | Byte 7-8   | Byte 9-12 |
+|---------------|------------|------------|------------|-----------|
 | Variable Name | sensor_one | L1_Reading | sensor_two | L2_Reading | 
 | Variable Type | char       | char       | char       | char       | 
 | Min Value     | S1         | 0000          | S2         | 0000          |
