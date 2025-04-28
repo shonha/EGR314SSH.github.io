@@ -68,8 +68,8 @@ Title: API
 ### Example Messages
 |    | Message |
 |-----|--------|
-|Received| AZMHm0S13452S27865S36162S42919V2818L1R0YB|
-|Sent| AZHLV2818YB |
+|Received| AZmhMOS13452S27865L1R0YB|
+|Sent| AZhlS12313S28745YB |
 ### Messages Received
 
 ```mermaid
