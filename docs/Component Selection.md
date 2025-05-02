@@ -35,7 +35,7 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
-| GPIO       |23           | 0      | *                              |
+| GPIO       |23           | 0     | *                              |
 | ADC        | 23           | 0      | *                              |
 | UART       | 4           | 2      | RC6-RC7                              |
 | SPI        | 8           | 4      | RB0-RB3                            |
