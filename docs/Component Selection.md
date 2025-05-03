@@ -71,6 +71,7 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 |Pros               |Cons                      |
 |-------------------|--------------------------|
 |Fast Shipping      |Can't communicate over UART|
+|Small for its capabilities | Has only 14 pins |
 
 2. PIC18F27Q10-I/SO
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PIC4.jpg" width="200" height="200">
@@ -80,8 +81,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|Has UART and SPI compatibility|small programming size (28kB) compared to 128 kB used in class|
-|Functions with MPX labs ||
+|Has UART and SPI compatibility|Small programming size (28kB) compared to 128 kB used in class|
+|Functions with MPX labs | Bigger compared to other options|
 
 3. PIC18F14Q20T-I/SS
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/150%7EC04-072%7ESS%7E20.jpg" width="200" height="200">
@@ -91,8 +92,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|UART and SPI compatibility|compatibility issues|
-
+|UART and SPI compatibility|Compatibility issues|
+|Possibly easier to solder| Has only 14 pins |
 
 **Choice:** Option 2 PIC18F27Q10-I/SO
 
@@ -107,7 +108,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|can communicate with SPI     |hard to solder/almost impossible|
+|Can communicate with SPI     |Hard to solder/almost impossible|
+| Cheaper option | Complicated IC factor |
 
 2. DRV8434SPWPR
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/MDOP2.jpg" width="200" height="200">
@@ -117,7 +119,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|several half bridges|bigger than other options|
+|Several half bridges|Bigger than other options|
+| Cheaper option | Sensitive Configuration issues |
 
 
 3. DRV8889QPWPRQ1
@@ -128,7 +131,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|can communicate with SPI|expensive option|
+|Can communicate with SPI|Expensive option|
+|Stall detection and SPI modes | Only fit for one stepper motor |
 
 **Choice:** Option 3 DRV8889QPWPRQ1
 
@@ -142,7 +146,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|cheapest option     |7.5 degree step angle|
+|Cheapest option     |7.5 degree step angle|
+|Reliable for testing | Thermal issues |
 
 2. QSH4218-51-10-049
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SMOP2.jpg" width="200" height="200">
@@ -152,7 +157,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|bipolar/hybrid|super expensive|
+|Bipolar/hybrid|Super expensive|
+|Used on 3D printers | Out of budget|
 
 
 3. 42M100B1B
@@ -163,7 +169,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|bipolar/hybrid|no datasheet and hard to wire|
+|Bipolar/hybrid|No datasheet and hard to wire|
+|Decent fit for project scope| expensive with no room for error |
 
 **Choice:** Option 1 35BYHJ30-36A
 
@@ -178,7 +185,7 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|cheapest option     |low current output|
+|Cheapest option     |Low current output|
 
 2. QSH4218-51-10-049
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PSOP2.jpg" width="200" height="200">
@@ -188,7 +195,7 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|smallest charging block|low current output|
+|Smallest charging block|Low current output|
 
 
 3. L6R24-120
@@ -200,7 +207,7 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|high current potential|most expensive option|
+|High current potential|Most expensive option|
 
 
 **Choice:** Option 3 L6R24-120
@@ -217,7 +224,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|cheapest option     |6 pin configuration|
+|Cheapest option     |6 pin configuration|
+|Supplies high current| No thermal connections|
 
 2. TLV61046ADBVR
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/VROP2.jpg" width="200" height="200">
@@ -227,7 +235,9 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|adjustable regulator|6 pin configuration|
+|Adjustable regulator|6 pin configuration|
+|Reasonable price|No thermal connection|
+
 
 
 3. LM2575-3.3WU
@@ -238,8 +248,8 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 |Pros               |Cons                      |
 |-------------------|--------------------------|
-|buck regulator|smaller input voltage range|
-|5 pin configuration||
+|Buck regulator|Smaller input voltage range|
+|5 pin configuration|Most expensive option|
 
 
 **Choice:** Option 3 LM2575-3.3WU
