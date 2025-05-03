@@ -2,6 +2,8 @@
 title: Schematic Design
 ---
 
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PCBFINAL.png" style="display: block; margin: auto;" alt="PCB Final">
+<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PCBFINAL2.png" style="display: block; margin: auto;" alt="PCB Final 2">
 
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SchematicDesign.png">
 
