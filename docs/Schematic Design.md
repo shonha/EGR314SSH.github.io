@@ -2,6 +2,7 @@
 title: Schematic Design
 ---
 
+
 <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SchematicDesign.png">
 
 ## PCB Design
