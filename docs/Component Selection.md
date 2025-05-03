@@ -1,15 +1,28 @@
 ---
 title: Component Selection
 ---
+## Final Component Selection Table
+
+| Component | Component Datasheet | Price | Picture |
+|-----------|-----------------------|-------|-------|
+|PIC18F27Q10-I/SO (PIC) | [Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)|$1.45|<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/PIC4.jpg" width="200" height="200">|
+|DRV8889QPWPRQ1 (Motor Driver) |[Link to Product](https://www.digikey.com/en/products/detail/texas-instruments/DRV8889QPWPRQ1/11615769)|$4.17|<img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/MDOP3.jpg" width="200" height="200">|
+|35BYHJ30-36A (Stepper Motor) | [Link to Product](https://www.jameco.com/z/35BYHJ30-36A-Fulling-Motor-USA-Bipolar-Stepper-Motor-12VDC-259-mA-7-5-deg-48-Steps_2234476.html?CID=GOOG&gad_source=1&gclid=CjwKCAiAlPu9BhAjEiwA5NDSA3S3xKQSO3o9rV3IAYmnlmhb64g-l5FYRvc8DqAq_hisXs7W4HKWGxoCDoUQAvD_BwE)| $2.65 | <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SM5.png" width="200" height="200"> |
+|LM2575-3.3WU (Voltage Regulator) |[Link to Product](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3.3WU-TR/16679441?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Medium%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20223376311_adg-_ad-__dev-c_ext-_prd-16679441_sig-CjwKCAiAzvC9BhADEiwAEhtlNzgovozCst-eYHqQ_QTT8CnWAbNFBMAkZ4CDkSU5XGTwzjRZVjpIaRoC3hsQAvD_BwE&gad_source=1&gclid=CjwKCAiAzvC9BhADEiwAEhtlNzgovozCst-eYHqQ_QTT8CnWAbNFBMAkZ4CDkSU5XGTwzjRZVjpIaRoC3hsQAvD_BwE&gclsrc=aw.ds) |$1.75 | <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/SR4REALONE.png" width="200" height="200"> |
+| L6R24-120 (Power Supply) | [Link to Product](https://www.digikey.com/en/products/detail/tri-mag-llc/L6R24-120/7682639) | $8.95 | <img src="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/L6R24_Wall-Mount.jpg" width="200" height="200"> |
+## Final Decision Making Process
+
+For my decision making process, my goal was to find components that were compatible with each other and have longevity For my 3.3V Switching Regulator, I chose the SMD variant of the one used in previous labs as I had familiarity with its circuitry, almost guaranteeing a working switching regulator when it came to testing the prototype. My PIC choice was also inspired by the one used in class as it features the same program memory size and ram size as the DIP given in class. Both the motor driver and motor on the other hand was chosen due to their affordability while also having to heavily rely on their datasheets. This allowed me to meet my product requirements as I utilize a PIC microcontroller, a 3.3V switching regulator, SPI motor driver, and a stepper motor. I also chose a power supply that had enough current to supply my needs of the entire subsystem.
+
 ## Role and Responsibilities
 
 I am responsible for the actuator and using a PIC. This will be done using a stepper motor to control the rotational movement of the solar panel so it can face the sun. I will communicate using a Serial Protocol Interface (SPI) along with a stepper motor driver. To communicate with the daisy chain, I will communicate over UART to receive data from the optical sensor, allowing the stepper motor to rotate based on where the sun is facing.  The microcontroller will be powered using a 3.3V switching buck regulator and a 12V power supply to power the 12V stepper motor.
 
 ## MCC Configuration
 
-<img src ="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/FINALPICLAY.png"> 
+<img src ="https://raw.githubusercontent.com/shonha/EGR314SSH.github.io/refs/heads/main/images/MPLAB%20PIN%20CONFIG.png"> 
 
-I chose a 28 pin PIC as my main microcontroller as my subsystem will initially only need about 6 pins to work effectively. Two pins are designated to RX and TX pins so I can communicate to the daisy chain network. 4 pins are designated to the stepper motor driver, focusing on SCK, SDI, SDO, and SS. We have a clock, serial input, serial output, and slave select that will connect to the stepper motor driver. Other pins are free of use and can be used for debugging purposes. The other pins are used for debugging and potential layout shifts down the road
+I chose a 28 pin PIC as my main microcontroller as my subsystem will initially only need about 6 pins to work effectively. Two pins are designated to RX and TX pins so I can communicate to the daisy chain network. 4 pins are designated to the stepper motor driver, focusing on SCK, SDI, SDO, and SS. We have a clock, serial input, serial output, and slave select that will connect to the stepper motor driver. Other pins are free of use and can be used for debugging purposes. RA0, RA1, and RB5 are used as debugging LEDs and push buttons. RA2-RA3 are used to power up the motor driver's nSLEEP and DRVoff pins which are needed based off the DRV8889 datasheet. RA4-RA5 were used as debugging header pins and testing. RB0 acts a digital output pin to enable and disable chip select.
 
 ## PIC Rationale
 
@@ -35,10 +48,10 @@ I chose a 28 pin PIC as my main microcontroller as my subsystem will initially o
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
-| GPIO       |23           | 0     | *                              |
+| GPIO       |23           | 8     | RA0-RA5, RB5, RB0                              |
 | ADC        | 23           | 0      | *                              |
 | UART       | 4           | 2      | RC6-RC7                              |
-| SPI        | 8           | 4      | RB0-RB3                            |
+| SPI        | 8           | 3      | RB1-RB3                            |
 | I2C        | 4           | 0      | *                              |
 | PWM        | 23           | 0      | *                              |
 | ICSP       | 1           | 1      | RE3                             |
