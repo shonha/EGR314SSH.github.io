@@ -78,7 +78,7 @@ flowchart TD
     B --> |Message Type #4|K
     B --> |For Message Type #1| D{Read Message Type} -->|Automatic| G[State 0] 
     D -->|Manual| J[State 1]
-    B -->|For Message Type #2| E{Compare all four readings and store into array} -->|Highest Reading| H[Rotate Stepper motor towards direction]
+    B -->|For Message Type #2| E{Compare two readings and store into array} -->|Highest Reading| H[Rotate Stepper motor towards direction]
     E-->|Lowest Readings|L[Trash messages]
     J -->  K{Control Motor with Two Buttons}
     K --> |Left Button| C[Turn Stepper Motor CW]
